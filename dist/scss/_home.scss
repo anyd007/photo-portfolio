@@ -8,11 +8,57 @@
     &__title{
         font-size: 3rem;
         padding-bottom: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         border-bottom: 2px solid $main-font-color;
 
         &--name{
             color: $effect-color;
+        }
+    }
+
+    .media{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 10vw;
+
+        &__item{
+            margin-bottom: 1rem;
+            &--img{
+                width: 28vw;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 1px 1px 12px $main-font-color;
+            }
+        }
+
+        &__link{
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / 4;
+            font-size: 2rem;
+            @include smooth;
+
+            &:hover{
+                color: $effect-color;
+            }
+
+            &::before{
+                position: absolute;
+                content: '';
+                width: 50%;
+                height: 3px;
+                top: 0%;
+                left: 60%;
+                opacity: 0;
+                @include smooth;
+                background: $effect-color;
+            }
+
+            &:hover::before{
+                opacity: 0.9;
+                left: 0%;
+            }
         }
     }
 }
