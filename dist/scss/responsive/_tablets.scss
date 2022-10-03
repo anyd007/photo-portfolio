@@ -93,6 +93,7 @@
             transform: translateY(-100%);
             @include smooth;
             background: $menuBackground;
+            backdrop-filter: blur(4px);
 
             &.open{
                 transform: translateY(0);
@@ -113,6 +114,14 @@
                 padding: 1.5rem;
                 @include smooth;
             }
+        }
+    }
+
+    .home{
+        &__description{
+            margin: 0 auto;
+            width: 90%;
+            font-size: 0.8rem;
         }
     }
 }

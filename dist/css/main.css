@@ -57,6 +57,21 @@
   font-size: 1.8rem;
 }
 
+.home {
+  height: 100%;
+  padding-top: 15vh;
+  text-align: center;
+}
+.home__title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ffffff;
+}
+.home__title--name {
+  color: #ff652f;
+}
+
 @media (max-width: 768px) {
   body header {
     padding: 0%;
@@ -140,7 +155,9 @@
     overflow: hidden;
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
   }
   .nav .nav-menu.open {
     transform: translateY(0);
@@ -157,6 +174,11 @@
     font-size: 2rem;
     padding: 1.5rem;
     transition: all 0.5s ease-in-out;
+  }
+  .home__description {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 0.8rem;
   }
 }
 .nav-menu__item:nth-child(1) {
@@ -191,6 +213,11 @@ header {
   padding: 1rem;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+}
+
 h1, h2, h3, h4 {
   font-family: "Lato", sans-serif;
   color: #ffffff;
@@ -198,6 +225,7 @@ h1, h2, h3, h4 {
 
 p {
   font-family: "Poppins", sans-serif;
+  color: #ffffff;
 }
 
 a {

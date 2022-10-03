@@ -1,4 +1,4 @@
-@import './config', './nav', './responsive/tablets';
+@import './config', './nav', './home', './responsive/tablets';
 *{
     box-sizing: border-box;
     padding: 0%;
@@ -12,12 +12,17 @@ header{
     width: 100%;
     padding: 1rem;
 }
+main{
+    height: 100%;
+    width: 100%;
+}
 h1, h2, h3, h4{
     font-family: 'Lato', sans-serif;
     color: $main-font-color;
 }
 p{
     font-family: 'Poppins', sans-serif;
+    color: $main-font-color;
 }
 a{
     font-family: 'Lato', sans-serif;
