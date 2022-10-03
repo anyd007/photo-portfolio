@@ -15,6 +15,9 @@ const toggleMenu = () => {
       item.classList.add("open");
     });
     document.querySelector("body").classList.add("stopScroll")
+    document.querySelectorAll(".media__item").forEach(item=>{
+      item.style.zIndex = "-1";
+    })
     showMenu = true;
   } else {
     burger.classList.remove("open");
@@ -24,6 +27,9 @@ const toggleMenu = () => {
       item.classList.remove("open");
     });
     document.querySelector("body").classList.remove("stopScroll")
+    document.querySelectorAll(".media__item").forEach(item=>{
+      item.style.zIndex = "0";
+    })
     showMenu = false;
   }
 };
@@ -37,6 +43,9 @@ const hideMenu = e =>{
           item.classList.remove("open");
         });
         document.querySelector("body").classList.remove("stopScroll")
+        document.querySelectorAll(".media__item").forEach(item=>{
+          item.style.zIndex = "0";
+        })
         showMenu = false;
     }
 }
