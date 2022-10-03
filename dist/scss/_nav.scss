@@ -1,0 +1,57 @@
+@import './config';
+
+.menu-btn{
+    visibility: hidden;
+}
+
+.nav{
+    position: relative;
+    width: 90%;
+
+    .nav-menu{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        &__item{
+            position: relative;
+            overflow: hidden;
+
+            &::before{
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 70%;
+                left: 100%;
+                top: 0;
+                opacity: 0;
+                @include smooth;
+                background: $effect-color;
+            }
+
+            &:hover::before{
+                opacity: 0.9;
+                left: 0%;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 70%;
+                right: 100%;
+                bottom: 0;
+                @include smooth;
+                background: $effect-color;
+            }
+
+            &:hover::after{
+                opacity: 0.9;
+                right: 30%;
+            }
+        }
+
+        &__link{
+            font-size: 1.8rem;
+        }
+    }
+}

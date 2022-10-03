@@ -1,0 +1,32 @@
+@import './config', './nav', './responsive/tablets';
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: $main-background;
+}
+header{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+h1, h2, h3, h4{
+    font-family: 'Lato', sans-serif;
+    color: $main-font-color;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: $main-font-color;
+}
+ul{
+    list-style: none;
+}
+.stopScroll{
+    overflow: hidden;
+}

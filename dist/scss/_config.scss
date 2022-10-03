@@ -1,0 +1,24 @@
+$main-background: #1b1b1a;
+$secendery-background: #000000;
+$main-font-color: #ffffff;
+$effect-color: #ff652f;
+$menuBackground: rgba($main-font-color, 0.1);
+
+//responsive
+$screen-size:(
+    phones:600px,
+    tablets:768px,
+    laptops:992px,
+    large:1200px
+);
+@mixin screen($name) {
+    @media (max-width: map-get($screen-size, $name)){
+        @content;
+    }
+}
+
+
+//effects
+@mixin smooth {
+    transition: all 0.5s ease-in-out;
+}
