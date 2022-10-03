@@ -2,9 +2,19 @@
   visibility: hidden;
 }
 
+.nav-mail {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.nav-mail > a {
+  font-style: italic;
+}
+
 .nav {
   position: relative;
   width: 90%;
+  margin-top: 1.5rem;
 }
 .nav .nav-menu {
   display: grid;
@@ -105,10 +115,17 @@
     transform: rotate(-45deg) translate(3px, -7px);
     width: 30px;
   }
+  .nav-mail {
+    left: 2rem;
+  }
+  .nav-mail > a {
+    font-size: 0.6rem;
+  }
   .nav {
     position: fixed;
     visibility: hidden;
     width: 100%;
+    margin-top: 0%;
   }
   .nav.open {
     visibility: visible;

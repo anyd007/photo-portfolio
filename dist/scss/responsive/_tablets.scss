@@ -65,11 +65,18 @@
             }
         }
     }
+    .nav-mail{
+        left: 2rem;
 
+        & > a{
+            font-size: 0.6rem;
+        }
+    }
     .nav{
         position: fixed;
         visibility: hidden;
         width: 100%;
+        margin-top: 0%;
 
         &.open{
             visibility: visible;
