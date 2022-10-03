@@ -13,12 +13,13 @@
 
 .nav {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin-top: 1.5rem;
 }
 .nav .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 .nav .nav-menu__item {
   position: relative;
@@ -28,7 +29,7 @@
   position: absolute;
   content: "";
   height: 3px;
-  width: 70%;
+  width: 100%;
   left: 100%;
   top: 0;
   opacity: 0;
@@ -43,7 +44,7 @@
   position: absolute;
   content: "";
   height: 3px;
-  width: 70%;
+  width: 100%;
   right: 100%;
   bottom: 0;
   transition: all 0.5s ease-in-out;
@@ -51,7 +52,7 @@
 }
 .nav .nav-menu__item:hover::after {
   opacity: 0.9;
-  right: 30%;
+  right: 0%;
 }
 .nav .nav-menu__link {
   font-size: 1.8rem;
@@ -96,21 +97,6 @@
 }
 .home .media__link:hover {
   color: #ff652f;
-}
-.home .media__link::before {
-  position: absolute;
-  content: "";
-  width: 50%;
-  height: 3px;
-  top: 0%;
-  left: 60%;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  background: #ff652f;
-}
-.home .media__link:hover::before {
-  opacity: 0.9;
-  left: 0%;
 }
 
 .modal {

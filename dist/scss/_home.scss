@@ -43,23 +43,6 @@
             &:hover{
                 color: $effect-color;
             }
-
-            &::before{
-                position: absolute;
-                content: '';
-                width: 50%;
-                height: 3px;
-                top: 0%;
-                left: 60%;
-                opacity: 0;
-                @include smooth;
-                background: $effect-color;
-            }
-
-            &:hover::before{
-                opacity: 0.9;
-                left: 0%;
-            }
         }
     }
 }
