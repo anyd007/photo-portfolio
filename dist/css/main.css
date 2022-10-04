@@ -92,7 +92,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-top: 10vw;
+  margin-top: 7vw;
 }
 .home .media__item {
   margin-bottom: 1rem;
@@ -412,6 +412,7 @@
   }
   .home .media {
     grid-template-columns: 1fr;
+    margin-top: 18vw;
   }
   .home .media__item--img {
     width: 80%;
