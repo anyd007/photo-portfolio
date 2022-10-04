@@ -17,6 +17,7 @@
     }
 
     .social{
+        opacity: 0;
         display: grid;
         align-items: center;
         justify-content: center;
@@ -24,6 +25,9 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         margin-top: 5vw;
+        @include smooth;
+        animation: show 0.3s linear forwards;
+        animation-delay: 1s;
         
         &__items{
             color: $main-font-color;
@@ -74,5 +78,16 @@
                 color: $effect-color;
             }
         }
+    }
+}
+
+@keyframes show {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
     }
 }

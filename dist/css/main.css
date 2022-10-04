@@ -64,6 +64,7 @@
   color: #ff652f;
 }
 .home .social {
+  opacity: 0;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -71,6 +72,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-top: 5vw;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: show 0.3s linear forwards;
+          animation: show 0.3s linear forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .home .social__items {
   color: #ffffff;
@@ -115,6 +121,27 @@
   color: #ff652f;
 }
 
+@-webkit-keyframes show {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .modal {
   display: none;
   text-align: center;
