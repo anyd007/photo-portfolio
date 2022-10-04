@@ -3,17 +3,6 @@
 .menu-btn{
     visibility: hidden;
 }
-
-.nav-mail{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-
-    & > a{
-        font-style: italic;
-    }
-}
-
 .nav{
     position: relative;
     width: 100%;

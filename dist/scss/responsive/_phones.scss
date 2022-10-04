@@ -21,4 +21,24 @@
             width: 95%;
         }
     }
+
+    .contact{
+        grid-template-rows: 4rem 2rem 5rem;
+
+        &__item{
+            font-size: 0.8rem;
+        }
+
+        .wave{
+            height: 30px;
+            background-size: 1000px 30px;
+        }
+
+        .wave3{
+            opacity: 0;
+        }
+        .wave4{
+            opacity: 0;
+        }
+    }
 }
