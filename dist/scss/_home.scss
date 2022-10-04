@@ -16,6 +16,36 @@
         }
     }
 
+    .social{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 5vw;
+        
+        &__items{
+            color: $main-font-color;
+            font-size: 1.6rem;
+            @include smooth;
+
+            &:hover{
+                color: $effect-color;
+                transform: scale(1.1);
+            }
+
+            p{
+                margin-top: 10px;
+                @include smooth;
+
+                &:hover{
+                    color: $effect-color;
+                }
+            }
+        }
+    }
+
     .media{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

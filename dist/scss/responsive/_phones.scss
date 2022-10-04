@@ -1,6 +1,14 @@
 @import '../config';
 
 @include screen(phones){
+
+    .social{
+        &__items{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
     .home .media{
         grid-template-columns: 1fr;
 
