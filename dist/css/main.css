@@ -353,7 +353,7 @@
     width: 95%;
   }
   .contact {
-    width: 97%;
+    width: 100%;
     grid-template-rows: 4rem 2rem 5rem;
   }
   .contact__item {
