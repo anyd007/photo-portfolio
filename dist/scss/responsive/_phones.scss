@@ -51,4 +51,10 @@
             opacity: 0;
         }
     }
+
+    .gallery-modal{
+        &__img{
+            width: 99%;
+        }
+    }
 }

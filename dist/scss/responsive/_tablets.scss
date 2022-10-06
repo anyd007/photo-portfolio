@@ -132,6 +132,15 @@
             grid-column: 1 / 3;
         }
     }
+
+    //galeria
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+
+        .gallery__link{
+            width: 40vw;
+        }
+    }
 }
 
 @for $i from 1 through 4 {

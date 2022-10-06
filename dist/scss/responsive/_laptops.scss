@@ -1,0 +1,11 @@
+@import '../config';
+@include screen(laptops){
+
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+
+        .gallery__link{
+            width: 25vw;
+        }
+    }
+}
