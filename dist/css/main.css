@@ -389,6 +389,10 @@
   box-shadow: 1px 1px 15px #1b1b1a;
   -webkit-animation: modal-show 0.5s linear forwards;
           animation: modal-show 0.5s linear forwards;
+  transition: all 0.5s ease-in-out;
+}
+.gallery-modal__img.open {
+  transform: rotate(360deg);
 }
 
 @-webkit-keyframes modal-show {

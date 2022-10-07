@@ -88,6 +88,11 @@
         border-radius: 10px;
         box-shadow: 1px 1px 15px $main-background;
         animation: modal-show 0.5s linear forwards;
+        @include smooth;
+
+        &.open{
+            transform: rotate(360deg);
+        }
     }
 }
 
