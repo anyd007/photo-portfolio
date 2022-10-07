@@ -1,5 +1,20 @@
 @import './config';
 
+.gallery-close{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: $main-font-color;
+    cursor: pointer;
+    font-size: 2rem;
+    @include smooth;
+
+    &:hover{
+        color: $effect-color;
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
 .gallery-title{
     text-align: center;
     font-size: 4rem;
@@ -17,6 +32,12 @@
     .gallery__item{
         box-shadow: 0px 1px 12px $main-font-color;
         border-radius: 10px;
+        @include smooth;
+
+        &:hover{
+            filter: grayscale(100%);
+            transform: scale(1.1);
+        }
     }
 
     .gallery__link{
@@ -42,10 +63,39 @@
     overflow-x: hidden;
     white-space: nowrap;
 
+    &__next{
+        position: absolute;
+        right: 5rem;
+        top: 60%;
+        transform: translateY(-40%);
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    &__prev{
+        position: absolute;
+        left: 5rem;
+        top: 60%;
+        transform: translateY(-40%);
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
     &__img{
+        opacity: 0;
         width: 60%;
         margin-top: 3rem;
         border-radius: 10px;
         box-shadow: 1px 1px 15px $main-background;
+        animation: modal-show 0.5s linear forwards;
+    }
+}
+
+@keyframes modal-show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }

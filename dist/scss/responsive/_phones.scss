@@ -55,6 +55,15 @@
     .gallery-modal{
         &__img{
             width: 99%;
+            margin-top: 4rem;
+        }
+
+        &__next{
+            top: 5%;
+        }
+
+        &__prev{
+            top: 5%;
         }
     }
 }

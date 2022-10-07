@@ -141,6 +141,17 @@
             width: 40vw;
         }
     }
+
+    .gallery-modal{
+
+        &__next{
+            right: 2rem;
+        }
+
+        &__prev{
+            left: 2rem;
+        }
+    }
 }
 
 @for $i from 1 through 4 {
