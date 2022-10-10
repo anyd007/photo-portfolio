@@ -82,25 +82,27 @@
     }
 
     &__img{
-        opacity: 0;
+        // opacity: 0;
         width: 60%;
         margin-top: 3rem;
         border-radius: 10px;
         box-shadow: 1px 1px 15px $main-background;
-        animation: modal-show 0.5s linear forwards;
-        @include smooth;
+        transition:opacity 1s linear;
 
         &.open{
-            transform: rotate(360deg);
+            animation: slider-effect 1s both;
         }
+
     }
 }
 
-@keyframes modal-show {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+@keyframes slider-effect {
+   from{
+    opacity: 0;
+   }
+   to{
+    opacity: 1;
+   }
+  }
+
+

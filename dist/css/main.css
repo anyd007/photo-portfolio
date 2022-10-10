@@ -382,33 +382,31 @@
   cursor: pointer;
 }
 .gallery-modal__img {
-  opacity: 0;
   width: 60%;
   margin-top: 3rem;
   border-radius: 10px;
   box-shadow: 1px 1px 15px #1b1b1a;
-  -webkit-animation: modal-show 0.5s linear forwards;
-          animation: modal-show 0.5s linear forwards;
-  transition: all 0.5s ease-in-out;
+  transition: opacity 1s linear;
 }
 .gallery-modal__img.open {
-  transform: rotate(360deg);
+  -webkit-animation: slider-effect 1s both;
+          animation: slider-effect 1s both;
 }
 
-@-webkit-keyframes modal-show {
-  0% {
+@-webkit-keyframes slider-effect {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
 
-@keyframes modal-show {
-  0% {
+@keyframes slider-effect {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }

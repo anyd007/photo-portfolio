@@ -9,7 +9,9 @@ const prevBtn = document.querySelector(".gallery-modal__prev");
 let arrayOfImg = Array.from(images); //strożenie tablicy z NodeList zdjęć
 let counter = 0; //wartość początkowa licznika do przycisków next i prev
 let src;
-let alt
+let alt;
+// const slideSize = arrayOfImg[0].getBoundingClientRect();
+// const slideWidth = slideSize.width
 
 const openGalleryModal = (e) => {
   if (e.target.matches(".gallery__link")) {
@@ -53,6 +55,9 @@ const prevSlide = () => {
 const setImg = () => {
   modalImage.setAttribute("src", arrayOfImg[counter].src);
   modalDecription.textContent = arrayOfImg[counter].alt
+  modalImage.classList.toggle("open")
+
+
 };
 
 gallery.addEventListener("click", openGalleryModal);
