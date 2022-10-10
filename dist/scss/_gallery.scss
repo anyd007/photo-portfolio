@@ -30,9 +30,14 @@
     padding-top: 3rem;
 
     .gallery__item{
+        opacity: 0;
         box-shadow: 0px 1px 12px $main-font-color;
         border-radius: 10px;
         @include smooth;
+
+        &.open{
+            opacity: 1;
+        }
 
         &:hover{
             filter: grayscale(100%);
@@ -87,7 +92,7 @@
         margin-top: 3rem;
         border-radius: 10px;
         box-shadow: 1px 1px 15px $main-background;
-        transition:opacity 1s linear;
+        transition:opacity 1s linear ;
 
         &.open{
             animation: slider-effect 1s both;
